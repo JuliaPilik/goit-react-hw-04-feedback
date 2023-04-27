@@ -20,6 +20,8 @@ export function App() {
       case 'bad':
         setBad(prevBad => prevBad + 1);
         break;
+      default:
+        console.log('no feedback');
     }
   };
   const total = bad + neutral + good;
